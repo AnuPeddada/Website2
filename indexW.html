@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Currency Converter</title>
+  <link rel="stylesheet" href="stylesW.css">
+</head>
+<body>
+  <div class="converter-container fade-in">
+    <h1>Pocket Currency Converter</h1>
+    <h4>A pocket app that allows you to easily transfer currency for your travels.</h4>
+    <p class="story">
+    When I traveled to India, I often found myself unsure if I was paying too much because I did not know the local 
+    conversion rates. This app helps you quickly compare prices abroad to familiar items back home, so you can avoid 
+    confusion or getting overcharged. I have expanded it to include multiple currencies, making it easy for travelers 
+    everywhere! Just click the flags to select your currencies and see how far your money really goes. (Sound on!)
+    </p>
+
+    <div class="converter-box">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <button id="convertBtn">Convert</button>
+    </div>
+
+    <p id="result" class="result"></p>
+    <p id="error" class="error"></p>
+
+    <div class="currency-selector">
+      <div class="currency-option" id="fromSelector">
+        <img id="fromFlag" src="https://flagcdn.com/24x18/us.png" alt="US Flag">
+        <span id="fromCurrencyText">USD</span>
+        <div class="dropdown" id="fromDropdown"></div>
+      </div>
+
+      <div class="currency-option" id="toSelector">
+        <img id="toFlag" src="https://flagcdn.com/24x18/in.png" alt="IN Flag">
+        <span id="toCurrencyText">INR</span>
+        <div class="dropdown" id="toDropdown"></div>
+      </div>
+    </div>
+
+    <audio id="chaChing" src="https://www.soundjay.com/buttons/sounds/button-14.mp3"></audio>
+  </div>
+
+  <script src="scriptW.js"></script>
+</body>
+</html>
